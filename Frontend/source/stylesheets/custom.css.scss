@@ -1,0 +1,35 @@
+form {
+  margin-top: 20px;
+
+  button {
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+blockquote {
+  margin-bottom: 3px;
+  font-weight: bold;
+
+  a {
+    color: #555;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+footer {
+  margin-bottom: 20px;
+  font-size: 0.85em;
+  padding-left: 20px;
+
+  a {
+    color: #555;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

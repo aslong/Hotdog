@@ -1,0 +1,27 @@
+.container
+  
+  .row
+    .span12
+
+      %form{ method: 'post', action: 'http://localhost:5000', autocomplete: 'off' }
+        %input{ type: 'text', name: 'query', value: 'bruins', autofocus: true }
+        %button.btn.btn-primary Stream
+
+  .row
+
+    #tweets.span12
+     
+      %script#tweet-template{ type: 'text/x-handlebars-template' }
+        .tweet{ id:'{{tweet_id}}', data:{ count:'{{count}}' } }
+          %blockquote
+            %a{ href: 'https://twitter.com/{{author}}/status/{{tweet_id}}', target: '_blank' } {{tweet}}
+          %footer
+            %a{ href: 'https://twitter.com/{{author}}', target: '_blank' } @{{author}}
+            was retweeted
+            %span.retweet-count {{count}}
+            times
+
+%script{ type: 'text/javascript', src: '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js' }
+%script{ type: 'text/javascript', src: 'http://localhost:5000/socket.io/socket.io.js' }
+%script{ type: 'text/javascript', src: '/javascripts/lib/handlebars.js' }
+%script{ type: 'text/javascript', src: '/javascripts/hotdog.js' }
