@@ -1,0 +1,30 @@
+/* line 1, /Users/toddzusman/Desktop/projects/Hotdog/Frontend/source/stylesheets/custom.css.scss */
+form {
+  margin-top: 20px; }
+  /* line 4, /Users/toddzusman/Desktop/projects/Hotdog/Frontend/source/stylesheets/custom.css.scss */
+  form button {
+    position: relative;
+    bottom: 5px; }
+
+/* line 10, /Users/toddzusman/Desktop/projects/Hotdog/Frontend/source/stylesheets/custom.css.scss */
+blockquote {
+  margin-bottom: 3px;
+  font-weight: bold; }
+  /* line 14, /Users/toddzusman/Desktop/projects/Hotdog/Frontend/source/stylesheets/custom.css.scss */
+  blockquote a {
+    color: #555; }
+    /* line 17, /Users/toddzusman/Desktop/projects/Hotdog/Frontend/source/stylesheets/custom.css.scss */
+    blockquote a:hover {
+      text-decoration: none; }
+
+/* line 23, /Users/toddzusman/Desktop/projects/Hotdog/Frontend/source/stylesheets/custom.css.scss */
+footer {
+  margin-bottom: 20px;
+  font-size: 0.85em;
+  padding-left: 20px; }
+  /* line 28, /Users/toddzusman/Desktop/projects/Hotdog/Frontend/source/stylesheets/custom.css.scss */
+  footer a {
+    color: #555; }
+    /* line 31, /Users/toddzusman/Desktop/projects/Hotdog/Frontend/source/stylesheets/custom.css.scss */
+    footer a:hover {
+      text-decoration: none; }

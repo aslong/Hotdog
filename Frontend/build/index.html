@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Hotdog</title>
+    <meta content='Todd Zusman' name='author'>
+    <link href='/stylesheets/bootstrap.min.css' rel='stylesheet'>
+    <link href='/stylesheets/custom.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='row'>
+        <div class='span12'>
+          <form action='http://localhost:5000' autocomplete='off' method='post'>
+            <input autofocus name='query' type='text' value='bruins'>
+            <button class='btn btn-primary'>Stream</button>
+          </form>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='span12' id='tweets'>
+          <script id='tweet-template' type='text/x-handlebars-template'>
+            <div class='tweet' data-count='{{count}}' id='{{tweet_id}}'>
+              <blockquote>
+                <a href='https://twitter.com/{{author}}/status/{{tweet_id}}' target='_blank'>{{tweet}}</a>
+              </blockquote>
+              <footer>
+                <a href='https://twitter.com/{{author}}' target='_blank'>@{{author}}</a>
+                was retweeted
+                <span class='retweet-count'>{{count}}</span>
+                times
+              </footer>
+            </div>
+          </script>
+        </div>
+      </div>
+    </div>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js' type='text/javascript'></script>
+    <script src='http://localhost:5000/socket.io/socket.io.js' type='text/javascript'></script>
+    <script src='/javascripts/lib/handlebars.js' type='text/javascript'></script>
+    <script src='/javascripts/hotdog.js' type='text/javascript'></script>
+  </body>
+</html>
